@@ -36,12 +36,12 @@ Henderson and Velleman (1981), Building multiple regression models interactively
 ## Plot#1 :For the boxplot of MPG by cylinders:
 The comment explains that cars with fewer cylinders (4) have higher MPG than those with more cylinders (6, 8).
 
-![Alt text](~/Rplot1.png?raw=true "Title")
+![Alt text](Rplot1.png?raw=true "Title")
 
 ## Plot#2 For the scatter plot of weight vs MPG:
 The comment points out the negative relationship between weight and MPG, indicating that heavier cars tend to have lower fuel efficiency.
 
-![Alt text](~/Rplot2.png?raw=true "Title")
+![Alt text](Rplot2.png?raw=true "Title")
 
 
 
