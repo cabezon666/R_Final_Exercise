@@ -31,19 +31,14 @@ Henderson and Velleman (1981) comment in a footnote to Table 1: 'Hocking [origin
 ## Source
 Henderson and Velleman (1981), Building multiple regression models interactively. *Biometrics*, **37**, 391-411.
 
-## Examples
-```r
-require(graphics)
-pairs(mtcars, main = "mtcars data", gap = 1/4)
-coplot(mpg ~ disp | as.factor(cyl), data = mtcars,
-       panel = panel.smooth, rows = 1)
-## possibly more meaningful, e.g., for summary() or bivariate plots:
-mtcars2 <- within(mtcars, {
-   vs <- factor(vs, labels = c("V", "S"))
-   am <- factor(am, labels = c("automatic", "manual"))
-   cyl  <- ordered(cyl)
-   gear <- ordered(gear)
-   carb <- ordered(carb)
-})
-summary(mtcars2)
-```
+## Plot#1
+
+![Alt text](~/Development/R_Final_Exercise/Rplot1.png?raw=true "Title")
+
+## Plot#2
+
+![Alt text](~/Development/R_Final_Exercise/Rplot2.png?raw=true "Title")
+
+
+
+## Plot#2
