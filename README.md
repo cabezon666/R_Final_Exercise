@@ -1,7 +1,9 @@
 # Motor Trend Car Road Tests
 
 ## Description
-The data was extracted from the 1974 *Motor Trend* US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles (1973-74 models).
+The data was extracted from the 1974 *Motor Trend* US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles (1973-74 models). This model is the test of the first module of R Programming Language.
+This data I just plot it from one dataset to be plotted in a simple way.
+I tried to do an structure that doesnt work, so I put everything in one file "app.R".
 
 ## Usage
 ```r
