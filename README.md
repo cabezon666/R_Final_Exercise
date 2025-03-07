@@ -33,11 +33,13 @@ Henderson and Velleman (1981) comment in a footnote to Table 1: 'Hocking [origin
 ## Source
 Henderson and Velleman (1981), Building multiple regression models interactively. *Biometrics*, **37**, 391-411.
 
-## Plot#1
+## Plot#1 :For the boxplot of MPG by cylinders:
+The comment explains that cars with fewer cylinders (4) have higher MPG than those with more cylinders (6, 8).
 
 ![Alt text](~/Development/R_Final_Exercise/blob/ewiese-m/Rplot1.png?raw=true "Title")
 
-## Plot#2
+## Plot#2 For the scatter plot of weight vs MPG:
+The comment points out the negative relationship between weight and MPG, indicating that heavier cars tend to have lower fuel efficiency.
 
 ![Alt text](~/Development/R_Final_Exercise/blob/ewiese-m/Rplot2.png?raw=true "Title")
 
