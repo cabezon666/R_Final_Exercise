@@ -33,19 +33,17 @@ Henderson and Velleman (1981) comment in a footnote to Table 1: 'Hocking [origin
 ## Source
 Henderson and Velleman (1981), Building multiple regression models interactively. *Biometrics*, **37**, 391-411.
 
-## Examples
-```r
-require(graphics)
-pairs(mtcars, main = "mtcars data", gap = 1/4)
-coplot(mpg ~ disp | as.factor(cyl), data = mtcars,
-       panel = panel.smooth, rows = 1)
-## possibly more meaningful, e.g., for summary() or bivariate plots:
-mtcars2 <- within(mtcars, {
-   vs <- factor(vs, labels = c("V", "S"))
-   am <- factor(am, labels = c("automatic", "manual"))
-   cyl  <- ordered(cyl)
-   gear <- ordered(gear)
-   carb <- ordered(carb)
-})
-summary(mtcars2)
-```
+## Plot#1 :For the boxplot of MPG by cylinders:
+The comment explains that cars with fewer cylinders (4) have higher MPG than those with more cylinders (6, 8).
+
+![Alt text](Rplot1.png?raw=true "Title")
+
+## Plot#2 For the scatter plot of weight vs MPG:
+The comment points out the negative relationship between weight and MPG, indicating that heavier cars tend to have lower fuel efficiency.
+
+![Alt text](Rplot2.png?raw=true "Title")
+
+
+
+
+

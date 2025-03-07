@@ -13,7 +13,8 @@ load_data <- function() {
 }
 
 summarize_data <- function(data) {
-  return(summary(data))
+  summary(data)
+  sum(is.na(data))
 }
 
 group_analysis <- function(data) {
@@ -45,7 +46,6 @@ plot_mpg_cyl <- function(data) {
     theme_minimal()
   
   print(p)
-  return(p)
 }
 
 plot_scatter <- function(data) {
@@ -58,7 +58,6 @@ plot_scatter <- function(data) {
     theme_minimal()
   
   print(p)
-  return(p)
 }
 
 fit_model <- function(data) {
@@ -70,7 +69,7 @@ analyze_mtcars <- function() {
   data <- load_data()
   
   cat("Data Summary:\n")
-  print(summarize_data(data))
+  summarize_data(data)
   
   cat("\nAnalysis by cylinder:\n")
   results <- group_analysis(data)
@@ -79,11 +78,9 @@ analyze_mtcars <- function() {
   cat("\nAnalysis by transmission:\n")
   print(results$by_trans)
   
-  cat("\nCreating visualizations...\n")
   plot_mpg_cyl(data)
   plot_scatter(data)
   
-  cat("\nFitting linear model...\n")
   model <- fit_model(data)
   print(summary(model))
 }
