@@ -33,7 +33,6 @@ Henderson and Velleman (1981) comment in a footnote to Table 1: 'Hocking [origin
 ## Source
 Henderson and Velleman (1981), Building multiple regression models interactively. *Biometrics*, **37**, 391-411.
 
-<<<<<<< HEAD
 ## Plot#1
 
 ![Alt text](~/Development/R_Final_Exercise/blob/ewiese-m/Rplot1.png?raw=true "Title")
