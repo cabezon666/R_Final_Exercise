@@ -1,7 +1,9 @@
 # Motor Trend Car Road Tests
 
 ## Description
-The data was extracted from the 1974 *Motor Trend* US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles (1973-74 models).
+The data was extracted from the 1974 *Motor Trend* US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles (1973-74 models). This model is the test of the first module of R Programming Language.
+This data I just plot it from one dataset to be plotted in a simple way.
+I tried to do an structure that doesnt work, so I put everything in one file "app.R".
 
 ## Usage
 ```r
@@ -31,6 +33,7 @@ Henderson and Velleman (1981) comment in a footnote to Table 1: 'Hocking [origin
 ## Source
 Henderson and Velleman (1981), Building multiple regression models interactively. *Biometrics*, **37**, 391-411.
 
+<<<<<<< HEAD
 ## Plot#1
 
 ![Alt text](~/Development/R_Final_Exercise/Rplot1.png?raw=true "Title")
@@ -42,3 +45,21 @@ Henderson and Velleman (1981), Building multiple regression models interactively
 
 
 ## Plot#2
+=======
+## Examples
+```r
+require(graphics)
+pairs(mtcars, main = "mtcars data", gap = 1/4)
+coplot(mpg ~ disp | as.factor(cyl), data = mtcars,
+       panel = panel.smooth, rows = 1)
+## possibly more meaningful, e.g., for summary() or bivariate plots:
+mtcars2 <- within(mtcars, {
+   vs <- factor(vs, labels = c("V", "S"))
+   am <- factor(am, labels = c("automatic", "manual"))
+   cyl  <- ordered(cyl)
+   gear <- ordered(gear)
+   carb <- ordered(carb)
+})
+summary(mtcars2)
+```
+>>>>>>> a4ea6a5822a12fc45b34ebf0c98de111211c0344
